@@ -1,0 +1,9 @@
+data = open("input.txt").read().splitlines()
+data = [int(i) for i in data] 
+
+fuel = 0
+for i in range(len(data)):
+    fuel += (data[i]//3) - 2
+
+print(fuel)
+    
